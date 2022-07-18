@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+    /* Colors Variable */
+    --Purple: "#5451D6";
+    --white: "#F0F6FB";
+    --light: "#DBE9F7";
+    --dark: "#0C2150";
+    --FontFamily: "Poppins", sans-serif;
+}
+.App {
+    font-family: var(--FontFamily);
+    display: flex;
+    padding: 20px;
+}
+.btn {
+    background-color: var(--Purple);
+    padding: 20px;
+}
+.cardContainer {
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.cardContainer:hover {
+    margin-top: -5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.header ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.header ul li a:hover {
+    color: #777;
+}
+
+.header ul li a svg {
+    margin-right: 5px;
+}
+.courseCard {
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 28px 28px 56px #d9d9d9, -28px -28px 56px #ffffff;
+}
+.searchBox {
+    padding-left: 160px;
+}
+.tableRow {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+.error {
+    color: red;
+}
+
+.card {
+    border-radius: 16px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 8px 8px 16px #cfcfcf, -8px -8px 16px #ffffff;
+}
+.cardSub {
+    color: #777;
+    font-size: 15px;
+}
+.courses {
+    color: #777;
+    margin-right: 90px;
+}
+.credit {
+    color: #777;
+    margin-left: 10px;
+}
