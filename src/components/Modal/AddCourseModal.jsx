@@ -1,6 +1,8 @@
+import { Cancel } from "@mui/icons-material";
 import {
     Box,
     Button,
+    Grid,
     InputLabel,
     MenuItem,
     Modal,
@@ -76,18 +78,31 @@ const AddCourseModal = ({ handleClose, open }) => {
                     <Form>
                         <Modal
                             open={open}
-                            onClose={handleClose}
                             aria-labelledby="modal-modal-title"
                             aria-describedby="modal-modal-description"
                         >
                             <Box sx={style} component="form">
-                                <Typography
-                                    id="modal-modal-title"
-                                    variant="h6"
-                                    component="h2"
-                                >
-                                    Add Courses
-                                </Typography>
+                                <Grid container justifyContent="space-between">
+                                    <Grid item>
+                                        <Typography
+                                            id="modal-modal-title"
+                                            variant="h6"
+                                            component="h2"
+                                        >
+                                            Add Courses
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item>
+                                        <Cancel
+                                            onClick={handleClose}
+                                            style={{
+                                                color: colors.purple,
+                                                cursor: "pointer",
+                                            }}
+                                        />
+                                    </Grid>
+                                </Grid>
+
                                 <TextInput
                                     value={formik.values.courseTitle}
                                     onChange={formik.handleChange}

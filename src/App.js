@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import CourseLists from "./components/CourseLists";
 import Header from "./components/Header";
 import AddCurriculam from "./Pages/AddCurriculam";
+import CourseLists from "./Pages/CourseLists";
 import Semester from "./Pages/Semester";
 
 const App = () => {

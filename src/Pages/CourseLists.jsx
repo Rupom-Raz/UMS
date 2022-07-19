@@ -2,8 +2,8 @@ import { Button } from "@mui/material";
 import * as React from "react";
 import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
+import AddCourseModal from "../components/Modal/AddCourseModal";
 import { colors } from "../Theme/colors";
-import AddCourseModal from "./Modal/AddCourseModal";
 
 const CourseLists = () => {
     const [open, setOpen] = React.useState(false);
