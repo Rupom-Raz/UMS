@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { Form, Formik } from "formik";
 import * as React from "react";
+import { useAlert } from "react-alert";
 import * as Yup from "yup";
 import { colors } from "../../Theme/colors";
 import TextInput from "../TextInput";
@@ -48,15 +49,20 @@ const initialValues = {
     program: "",
 };
 
-const onSubmit = (values, submitProps) => {
-    console.log("Form Data", values);
-    console.log("Submit props", submitProps);
-    submitProps.setSubmitting(false);
-    submitProps.resetForm();
-};
-
 const AddCourseModal = ({ handleClose, open }) => {
+    const alert = useAlert();
     const [formValues, setFormValues] = React.useState(null);
+    const onSubmit = (values, submitProps) => {
+        if (!values) {
+            alert.error("Please Add Course First");
+        } else {
+            alert.success("Course Added Successfully");
+        }
+        console.log("Form Data", values);
+        console.log("Submit props", submitProps);
+        submitProps.setSubmitting(false);
+        submitProps.resetForm();
+    };
 
     return (
         <>

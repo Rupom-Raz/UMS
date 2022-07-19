@@ -1,16 +1,9 @@
-import * as React from "react";
-import { Menu, MenuList, MenuItem, IconButton } from "@mui/material";
-
 import { MoreVert } from "@mui/icons-material";
+import { IconButton, Menu, MenuItem } from "@mui/material";
+import * as React from "react";
 import { colors } from "../../Theme/colors";
-import DeadlineModal from "../Modal/DeadlineModal";
 
-export default function MenuComp({
-    startDate,
-    onStartDate,
-    endDate,
-    onEndDate,
-}) {
+export default function MenuComp() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -42,14 +35,7 @@ export default function MenuComp({
                     "aria-labelledby": "basic-button",
                 }}
             >
-                <MenuItem divider className="menuItem">
-                    <DeadlineModal
-                        startDate={startDate}
-                        onStartDate={onStartDate}
-                        endDate={endDate}
-                        onEndDate={onEndDate}
-                    />
-                </MenuItem>
+                <MenuItem divider className="menuItem"></MenuItem>
             </Menu>
         </>
     );
