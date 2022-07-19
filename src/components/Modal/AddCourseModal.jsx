@@ -59,6 +59,7 @@ const AddCourseModal = ({ handleClose, open }) => {
             alert.error("Please Add Course First");
         } else {
             alert.success("Course Added Successfully");
+            handleClose();
         }
         console.log("Form Data", values);
         console.log("Submit props", submitProps);
@@ -110,6 +111,7 @@ const AddCourseModal = ({ handleClose, open }) => {
                                     label="Course Title"
                                     type="text"
                                 />
+
                                 <TextInput
                                     value={formik.values.courseCode}
                                     onChange={formik.handleChange}
@@ -138,7 +140,7 @@ const AddCourseModal = ({ handleClose, open }) => {
                                 <Select
                                     name="program"
                                     fullWidth
-                                    variant="standard"
+                                    variant="outlined"
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
                                     value={formik.values.program}

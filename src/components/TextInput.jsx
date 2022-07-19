@@ -1,6 +1,5 @@
 import { TextField } from "@mui/material";
-import React from "react";
-import { useField, ErrorMessage } from "formik";
+import { ErrorMessage, useField } from "formik";
 
 const TextInput = ({ label, type, ...props }) => {
     const [field, meta] = useField(props);
@@ -8,17 +7,37 @@ const TextInput = ({ label, type, ...props }) => {
     return (
         <>
             <div className="mb-2">
-                <TextField
-                    {...field}
-                    {...props}
-                    autoComplete="off"
-                    type={type}
-                    style={{ marginBottom: "5px" }}
-                    fullWidth
-                    id="standard-basic"
-                    label={label}
-                    variant="standard"
-                />
+                {meta.error ? (
+                    <TextField
+                        {...field}
+                        {...props}
+                        error
+                        id="outlined-error"
+                        label={label}
+                        autoComplete="off"
+                        type={type}
+                        style={{
+                            marginBottom: "5px",
+                        }}
+                        fullWidth
+                        variant="outlined"
+                    />
+                ) : (
+                    <TextField
+                        {...field}
+                        {...props}
+                        autoComplete="off"
+                        type={type}
+                        style={{
+                            marginBottom: "5px",
+                        }}
+                        fullWidth
+                        id="standard-basic"
+                        label={label}
+                        variant="outlined"
+                    />
+                )}
+
                 <ErrorMessage
                     component="div"
                     name={field.name}

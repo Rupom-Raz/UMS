@@ -13,11 +13,11 @@ const CourseLists = () => {
     return (
         <>
             <AddCourseModal handleClose={handleClose} open={open} />
-            <Card className="courseCard mt-5">
+            <Card className="courseCard mt-5 mx-2">
                 <Card.Body>
                     <div className="container-fluid">
-                        <div className="row">
-                            <div className="col-md-4">
+                        <div className="row justify-content-between ">
+                            <div className="col-sm-6 col-md-4">
                                 <Button
                                     onClick={handleOpen}
                                     variant="outlined"
@@ -29,15 +29,14 @@ const CourseLists = () => {
                                     Add Course
                                 </Button>
                             </div>
-                            <div className="col-md-4">
+
+                            <div className="col-sm-6 col-md-4 searchBox">
                                 <h5
                                     className="text-center"
                                     style={{ color: colors.gray }}
                                 >
                                     List of Courses
                                 </h5>
-                            </div>
-                            <div className="col-md-4 searchBox">
                                 <form action="">
                                     <div className="form-group ml-3">
                                         <input

@@ -48,6 +48,7 @@ const AddCurriculamModal = ({ handleClose, open }) => {
             alert.error("Please Add Curriculam First");
         } else {
             alert.success("Curriculam Added Successfully");
+            handleClose();
         }
         console.log("Form Data", values);
         console.log("Submit props", submitProps);
@@ -110,7 +111,7 @@ const AddCurriculamModal = ({ handleClose, open }) => {
                                 <Select
                                     name="program"
                                     fullWidth
-                                    variant="standard"
+                                    variant="outlined"
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
                                     value={formik.values.program}
