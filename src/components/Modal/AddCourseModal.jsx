@@ -40,7 +40,7 @@ const validationSchema = Yup.object().shape({
         .max(3, "No longer than 3 credits")
         .min(1, "Must be longer than 1 credit")
         .required("Course credit is required"),
-    program: Yup.string().required("Program is required").nullable(),
+    program: Yup.string().required("Program is required"),
 });
 
 const initialValues = {
@@ -48,7 +48,7 @@ const initialValues = {
     courseCode: "",
     courseHours: "",
     credit: "",
-    program: "",
+    program: "Select Program",
 };
 
 const AddCourseModal = ({ handleClose, open }) => {
@@ -147,6 +147,9 @@ const AddCourseModal = ({ handleClose, open }) => {
                                     label="Select Programs"
                                     onChange={formik.handleChange}
                                 >
+                                    <MenuItem value="Select Program">
+                                        Select Program
+                                    </MenuItem>
                                     <MenuItem value="B.Sc">B.Sc</MenuItem>
                                     <MenuItem value="M.Sc">M.Sc</MenuItem>
                                 </Select>

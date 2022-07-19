@@ -37,7 +37,7 @@ const validationSchema = Yup.object().shape({
 const initialValues = {
     curriculamName: "",
     curriculamID: "",
-    program: "",
+    program: "Select Program",
 };
 
 const AddCurriculamModal = ({ handleClose, open }) => {
@@ -118,6 +118,9 @@ const AddCurriculamModal = ({ handleClose, open }) => {
                                     label="Select Programs"
                                     onChange={formik.handleChange}
                                 >
+                                    <MenuItem value="Select Program">
+                                        Select Program
+                                    </MenuItem>
                                     <MenuItem value="B.Sc">B.Sc</MenuItem>
                                     <MenuItem value="M.Sc">M.Sc</MenuItem>
                                 </Select>

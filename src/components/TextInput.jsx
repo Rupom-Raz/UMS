@@ -7,7 +7,7 @@ const TextInput = ({ label, type, ...props }) => {
     return (
         <>
             <div className="mb-2">
-                {meta.error ? (
+                {meta.error && meta.touched ? (
                     <TextField
                         {...field}
                         {...props}
