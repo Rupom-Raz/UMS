@@ -1,8 +1,8 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import { colors } from "../Theme/colors";
 
-import { LockOutlined, LockOpen } from "@mui/icons-material";
+import { LockOpen, LockOutlined } from "@mui/icons-material";
 import ButtonComp from "../components/Button/ButtonComp";
 import SingleCard from "../components/RegistrationCard/SingleCard";
 
@@ -15,11 +15,14 @@ const Semester = () => {
 
     return (
         <>
-            <div
-                className="App"
-                style={{ backgroundColor: `${colors.white}` }}
-            >
-                <Grid container>
+            <div className="App" style={{ backgroundColor: `${colors.white}` }}>
+                <Grid container justifyContent="center">
+                    <Grid item>
+                        <Typography variant="h4" style={{ color: colors.gray }}>
+                            Addmisson Will Be Open on January 25, 2022
+                        </Typography>
+                    </Grid>
+
                     <Grid item xs={12} margin={3}>
                         <ButtonComp
                             onclick={onclick}

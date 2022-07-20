@@ -2,6 +2,7 @@ import { MoreVert } from "@mui/icons-material";
 import { IconButton, Menu, MenuItem } from "@mui/material";
 import * as React from "react";
 import { colors } from "../../Theme/colors";
+import DeadlineModal from "../Modal/DeadLineModal";
 
 export default function MenuComp() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -35,7 +36,9 @@ export default function MenuComp() {
                     "aria-labelledby": "basic-button",
                 }}
             >
-                <MenuItem divider className="menuItem"></MenuItem>
+                <MenuItem divider className="menuItem">
+                    <DeadlineModal />
+                </MenuItem>
             </Menu>
         </>
     );

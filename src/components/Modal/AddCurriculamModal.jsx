@@ -31,7 +31,7 @@ const style = {
 const validationSchema = Yup.object().shape({
     curriculamName: Yup.string().required("Curriculam Title is required"),
     curriculamID: Yup.number().required("Curriculam ID is required"),
-    program: Yup.string().required("Program is required").nullable(),
+    program: Yup.string().required("Program is required"),
 });
 
 const initialValues = {
