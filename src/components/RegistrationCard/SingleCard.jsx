@@ -1,6 +1,5 @@
 import { Cancel } from "@mui/icons-material";
 import {
-    Avatar,
     Card,
     CardContent,
     CardHeader,
@@ -11,7 +10,6 @@ import {
 } from "@mui/material";
 import { colors } from "../../Theme/colors";
 import MenuComp from "../Menu/MenuComp";
-import avatar from "../../assets/Images/logo.png";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;

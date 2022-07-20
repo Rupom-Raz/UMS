@@ -8,6 +8,7 @@ const AddCurriculam = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
     return (
         <>
             <AddCurriculamModal handleClose={handleClose} open={open} />

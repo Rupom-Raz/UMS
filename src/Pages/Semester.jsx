@@ -1,10 +1,28 @@
-import { Grid, Typography } from "@mui/material";
+import {
+    Card,
+    CardContent,
+    CardHeader,
+    Grid,
+    IconButton,
+    styled,
+    Typography,
+} from "@mui/material";
 import { useState } from "react";
 import { colors } from "../Theme/colors";
 
-import { LockOpen, LockOutlined } from "@mui/icons-material";
+import { Cancel, LockOpen, LockOutlined } from "@mui/icons-material";
 import ButtonComp from "../components/Button/ButtonComp";
-import SingleCard from "../components/RegistrationCard/SingleCard";
+import MenuComp from "../components/Menu/MenuComp";
+const ExpandMore = styled((props) => {
+    const { expand, ...other } = props;
+    return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+    transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
+        duration: theme.transitions.duration.shortest,
+    }),
+}));
 
 const Semester = () => {
     const [off, setOff] = useState(false);
@@ -32,36 +50,199 @@ const Semester = () => {
                     </Grid>
 
                     <Grid container>
+                        {/* Semester card start here */}
                         <Grid item>
-                            <SingleCard
-                                btnValue={off}
-                                title="Faculty of BBA"
-                                subTitle="Department of Business Administration"
-                                degree="MBA"
-                                season="Fall-2022"
-                                admissonMessage="Admisson is Going On"
-                            />
+                            <Grid
+                                className="cardContainer"
+                                container
+                                justifyContent="center"
+                            >
+                                <Grid
+                                    item
+                                    xs={10}
+                                    style={{ textAlign: "center" }}
+                                >
+                                    <Card
+                                        sx={{ maxWidth: 350, maxHeight: 350 }}
+                                        style={{
+                                            backgroundColor: colors.fullwhite,
+                                            borderRadius: "13px",
+                                        }}
+                                    >
+                                        <CardHeader
+                                            action={
+                                                off ? (
+                                                    <IconButton aria-label="settings">
+                                                        <Cancel
+                                                            style={{
+                                                                color: `${colors.purple}`,
+                                                            }}
+                                                        />
+                                                    </IconButton>
+                                                ) : (
+                                                    <IconButton>
+                                                        <MenuComp />
+                                                    </IconButton>
+                                                )
+                                            }
+                                            style={{ color: colors.purple }}
+                                            title="Faculty of CSE"
+                                            subheader="Department of Business Administration"
+                                            degree="MBA"
+                                            season="Fall-2022"
+                                            admissonMessage="Admisson is Going On"
+                                        />
+                                        <CardContent>
+                                            <Typography
+                                                style={{
+                                                    fontWeight: 600,
+                                                    color: colors.dark,
+                                                }}
+                                                variant="body2"
+                                            >
+                                                MBA
+                                            </Typography>
+                                            <Typography
+                                                style={{ color: colors.purple }}
+                                            >
+                                                Admisson is Going On
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                Fall-2022
+                                            </Typography>
+                                        </CardContent>
+                                    </Card>
+                                </Grid>
+                            </Grid>
                         </Grid>
 
                         <Grid item>
-                            <SingleCard
-                                btnValue={off}
-                                title="Faculty of CSE"
-                                subTitle="Department of Computer Science and Enginnering"
-                                degree="MSc"
-                                admissonMessage="Admisson is Going On"
-                                season="Summer-2022"
-                            />
+                            <Grid
+                                className="cardContainer"
+                                container
+                                justifyContent="center"
+                            >
+                                <Grid
+                                    item
+                                    xs={10}
+                                    style={{ textAlign: "center" }}
+                                >
+                                    <Card
+                                        sx={{ maxWidth: 350, maxHeight: 350 }}
+                                        style={{
+                                            backgroundColor: colors.fullwhite,
+                                            borderRadius: "13px",
+                                        }}
+                                    >
+                                        <CardHeader
+                                            action={
+                                                off ? (
+                                                    <IconButton aria-label="settings">
+                                                        <Cancel
+                                                            style={{
+                                                                color: `${colors.purple}`,
+                                                            }}
+                                                        />
+                                                    </IconButton>
+                                                ) : (
+                                                    <IconButton>
+                                                        <MenuComp />
+                                                    </IconButton>
+                                                )
+                                            }
+                                            style={{ color: colors.purple }}
+                                            title="Faculty of CSE"
+                                            subheader="Department of Business Administration"
+                                            degree="MBA"
+                                            season="Fall-2022"
+                                            admissonMessage="Admisson is Going On"
+                                        />
+                                        <CardContent>
+                                            <Typography
+                                                style={{
+                                                    fontWeight: 600,
+                                                    color: colors.dark,
+                                                }}
+                                                variant="body2"
+                                            >
+                                                MBA
+                                            </Typography>
+                                            <Typography
+                                                style={{ color: colors.purple }}
+                                            >
+                                                Admisson is Going On
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                Fall-2022
+                                            </Typography>
+                                        </CardContent>
+                                    </Card>
+                                </Grid>
+                            </Grid>
                         </Grid>
                         <Grid item>
-                            <SingleCard
-                                btnValue={off}
-                                title="Faculty of CSE"
-                                subTitle="Department of Computer Science and Enginnering"
-                                degree="MSc"
-                                admissonMessage="Admisson is Going On"
-                                season="Summer-2022"
-                            />
+                            <Grid
+                                className="cardContainer"
+                                container
+                                justifyContent="center"
+                            >
+                                <Grid
+                                    item
+                                    xs={10}
+                                    style={{ textAlign: "center" }}
+                                >
+                                    <Card
+                                        sx={{ maxWidth: 350, maxHeight: 350 }}
+                                        style={{
+                                            backgroundColor: colors.fullwhite,
+                                            borderRadius: "13px",
+                                        }}
+                                    >
+                                        <CardHeader
+                                            action={
+                                                off ? (
+                                                    <IconButton aria-label="settings">
+                                                        <Cancel
+                                                            style={{
+                                                                color: `${colors.purple}`,
+                                                            }}
+                                                        />
+                                                    </IconButton>
+                                                ) : (
+                                                    <IconButton>
+                                                        <MenuComp />
+                                                    </IconButton>
+                                                )
+                                            }
+                                            style={{ color: colors.purple }}
+                                            title="Faculty of CSE"
+                                            subheader="Department of Business Administration"
+                                            degree="MBA"
+                                            season="Fall-2022"
+                                            admissonMessage="Admisson is Going On"
+                                        />
+                                        <CardContent>
+                                            <Typography
+                                                style={{
+                                                    fontWeight: 600,
+                                                    color: colors.dark,
+                                                }}
+                                                variant="body2"
+                                            >
+                                                MBA
+                                            </Typography>
+                                            <Typography
+                                                style={{ color: colors.purple }}
+                                            >
+                                                Admisson is Going On
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                Fall-2022
+                                            </Typography>
+                                        </CardContent>
+                                    </Card>
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
                     <hr />
@@ -77,44 +258,196 @@ const Semester = () => {
 
                     <Grid container>
                         <Grid item>
-                            <SingleCard
-                                btn={on}
-                                title="Faculty of BBA"
-                                subTitle="Department of Business Administration"
-                                degree="MBA"
-                                season="Fall-2022"
-                                admissonMessage="Admisson is Going On"
-                            />
+                            <Grid
+                                className="cardContainer"
+                                container
+                                justifyContent="center"
+                            >
+                                <Grid
+                                    item
+                                    xs={10}
+                                    style={{ textAlign: "center" }}
+                                >
+                                    <Card
+                                        sx={{ maxWidth: 350, maxHeight: 350 }}
+                                        style={{
+                                            backgroundColor: colors.fullwhite,
+                                            borderRadius: "13px",
+                                        }}
+                                    >
+                                        <CardHeader
+                                            action={
+                                                off ? (
+                                                    <IconButton aria-label="settings">
+                                                        <Cancel
+                                                            style={{
+                                                                color: `${colors.purple}`,
+                                                            }}
+                                                        />
+                                                    </IconButton>
+                                                ) : (
+                                                    <IconButton>
+                                                        <MenuComp />
+                                                    </IconButton>
+                                                )
+                                            }
+                                            style={{ color: colors.purple }}
+                                            title="Faculty of CSE"
+                                            subheader="Department of Business Administration"
+                                            degree="MBA"
+                                            season="Fall-2022"
+                                            admissonMessage="Admisson is Going On"
+                                        />
+                                        <CardContent>
+                                            <Typography
+                                                style={{
+                                                    fontWeight: 600,
+                                                    color: colors.dark,
+                                                }}
+                                                variant="body2"
+                                            >
+                                                MBA
+                                            </Typography>
+                                            <Typography
+                                                style={{ color: colors.purple }}
+                                            >
+                                                Admisson is Going On
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                Fall-2022
+                                            </Typography>
+                                        </CardContent>
+                                    </Card>
+                                </Grid>
+                            </Grid>
                         </Grid>
                         <Grid item>
-                            <SingleCard
-                                btnValue={on}
-                                title="Faculty of BBA"
-                                subTitle="Department of Business Administration"
-                                degree="MBA(Excutive)"
-                                season="Winter-2022"
-                                admissonMessage="Admisson is Going On"
-                            />
+                            <Grid
+                                className="cardContainer"
+                                container
+                                justifyContent="center"
+                            >
+                                <Grid
+                                    item
+                                    xs={10}
+                                    style={{ textAlign: "center" }}
+                                >
+                                    <Card
+                                        sx={{ maxWidth: 350, maxHeight: 350 }}
+                                        style={{
+                                            backgroundColor: colors.fullwhite,
+                                            borderRadius: "13px",
+                                        }}
+                                    >
+                                        <CardHeader
+                                            action={
+                                                off ? (
+                                                    <IconButton aria-label="settings">
+                                                        <Cancel
+                                                            style={{
+                                                                color: `${colors.purple}`,
+                                                            }}
+                                                        />
+                                                    </IconButton>
+                                                ) : (
+                                                    <IconButton>
+                                                        <MenuComp />
+                                                    </IconButton>
+                                                )
+                                            }
+                                            style={{ color: colors.purple }}
+                                            title="Faculty of CSE"
+                                            subheader="Department of Business Administration"
+                                            degree="MBA"
+                                            season="Fall-2022"
+                                            admissonMessage="Admisson is Going On"
+                                        />
+                                        <CardContent>
+                                            <Typography
+                                                style={{
+                                                    fontWeight: 600,
+                                                    color: colors.dark,
+                                                }}
+                                                variant="body2"
+                                            >
+                                                MBA
+                                            </Typography>
+                                            <Typography
+                                                style={{ color: colors.purple }}
+                                            >
+                                                Admisson is Going On
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                Fall-2022
+                                            </Typography>
+                                        </CardContent>
+                                    </Card>
+                                </Grid>
+                            </Grid>
                         </Grid>
                         <Grid item>
-                            <SingleCard
-                                btnValue={on}
-                                title="Faculty of CSE"
-                                subTitle="Department of Computer Science and Enginnering"
-                                degree="MSc"
-                                admissonMessage="Admisson is Going On"
-                                season="Summer-2022"
-                            />
-                        </Grid>
-                        <Grid item>
-                            <SingleCard
-                                btnValue={on}
-                                title="Faculty of CSE"
-                                subTitle="Department of Computer Science and Enginnering"
-                                degree="MSc"
-                                admissonMessage="Admisson is Going On"
-                                season="Summer-2022"
-                            />
+                            <Grid
+                                className="cardContainer"
+                                container
+                                justifyContent="center"
+                            >
+                                <Grid
+                                    item
+                                    xs={10}
+                                    style={{ textAlign: "center" }}
+                                >
+                                    <Card
+                                        sx={{ maxWidth: 350, maxHeight: 350 }}
+                                        style={{
+                                            backgroundColor: colors.fullwhite,
+                                            borderRadius: "13px",
+                                        }}
+                                    >
+                                        <CardHeader
+                                            action={
+                                                off ? (
+                                                    <IconButton aria-label="settings">
+                                                        <Cancel
+                                                            style={{
+                                                                color: `${colors.purple}`,
+                                                            }}
+                                                        />
+                                                    </IconButton>
+                                                ) : (
+                                                    <IconButton>
+                                                        <MenuComp />
+                                                    </IconButton>
+                                                )
+                                            }
+                                            style={{ color: colors.purple }}
+                                            title="Faculty of CSE"
+                                            subheader="Department of Business Administration"
+                                            degree="MBA"
+                                            season="Fall-2022"
+                                            admissonMessage="Admisson is Going On"
+                                        />
+                                        <CardContent>
+                                            <Typography
+                                                style={{
+                                                    fontWeight: 600,
+                                                    color: colors.dark,
+                                                }}
+                                                variant="body2"
+                                            >
+                                                MBA
+                                            </Typography>
+                                            <Typography
+                                                style={{ color: colors.purple }}
+                                            >
+                                                Admisson is Going On
+                                            </Typography>
+                                            <Typography variant="body2">
+                                                Fall-2022
+                                            </Typography>
+                                        </CardContent>
+                                    </Card>
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>

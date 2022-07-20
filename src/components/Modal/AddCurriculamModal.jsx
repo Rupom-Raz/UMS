@@ -22,7 +22,7 @@ const style = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    minWidth: 500,
     bgcolor: "background.paper",
     borderRadius: "20px",
     boxShadow: 24,
@@ -84,10 +84,15 @@ const AddCurriculamModal = ({ handleClose, open }) => {
                                     </Grid>
                                     <Grid item>
                                         <Cancel
-                                            onClick={handleClose}
+                                            onClick={() => {
+                                                handleClose();
+                                                formik.resetForm();
+                                            }}
                                             style={{
                                                 color: colors.purple,
                                                 cursor: "pointer",
+                                                marginTop: "-50px",
+                                                marginRight: "-20px",
                                             }}
                                         />
                                     </Grid>

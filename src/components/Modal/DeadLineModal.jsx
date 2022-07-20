@@ -14,7 +14,7 @@ const style = {
     transform: "translate(-50%, -50%)",
     width: 400,
     borderRadius: "10px",
-    bgcolor: `${colors.lightPurple}`,
+    bgcolor: `${colors.white}`,
     boxShadow: 24,
     p: 4,
 };
