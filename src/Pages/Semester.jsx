@@ -105,7 +105,6 @@ const Semester = () => {
                                             subheader="Department of Business Administration"
                                             degree="MBA"
                                             season="Fall-2022"
-                                            admissonMessage="Admisson is Going On"
                                         />
                                         <CardContent>
                                             <Typography
@@ -170,7 +169,6 @@ const Semester = () => {
                                             subheader="Department of Business Administration"
                                             degree="MBA"
                                             season="Fall-2022"
-                                            admissonMessage="Admisson is Going On"
                                         />
                                         <CardContent>
                                             <Typography
@@ -234,7 +232,6 @@ const Semester = () => {
                                             subheader="Department of Business Administration"
                                             degree="MBA"
                                             season="Fall-2022"
-                                            admissonMessage="Admisson is Going On"
                                         />
                                         <CardContent>
                                             <Typography
@@ -311,7 +308,6 @@ const Semester = () => {
                                             subheader="Department of Business Administration"
                                             degree="MBA"
                                             season="Fall-2022"
-                                            admissonMessage="Admisson is Going On"
                                         />
                                         <CardContent>
                                             <Typography
@@ -375,7 +371,6 @@ const Semester = () => {
                                             subheader="Department of Business Administration"
                                             degree="MBA"
                                             season="Fall-2022"
-                                            admissonMessage="Admisson is Going On"
                                         />
                                         <CardContent>
                                             <Typography
@@ -439,7 +434,6 @@ const Semester = () => {
                                             subheader="Department of Business Administration"
                                             degree="MBA"
                                             season="Fall-2022"
-                                            admissonMessage="Admisson is Going On"
                                         />
                                         <CardContent>
                                             <Typography

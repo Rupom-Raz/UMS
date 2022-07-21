@@ -76,7 +76,7 @@
 
 .tableRow {
     border-radius: 50px;
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    background: linear-gradient(145deg, #fff, #ffffff);
     box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
 .error {
@@ -86,7 +86,7 @@
 
 .card {
     border-radius: 16px;
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    background: linear-gradient(145deg, #ffffff, #ffffff);
     box-shadow: 8px 8px 16px #cfcfcf, -8px -8px 16px #ffffff;
 }
 .cardSub {

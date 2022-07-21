@@ -54,9 +54,10 @@ const AddTutionFee = () => {
                         <Grid container>
                             <Grid item xs={12} style={{ textAlign: "center" }}>
                                 <Card
-                                    sx={{ maxWidth: 350, maxHeight: 750 }}
+                                    className="card"
+                                    sx={{ maxWidth: 350, maxHeight: 850 }}
                                     style={{
-                                        backgroundColor: colors.white,
+                                        backgroundColor: colors.fullwhite,
                                         borderRadius: "13px",
                                     }}
                                 >
@@ -66,7 +67,6 @@ const AddTutionFee = () => {
                                         subheader="Department of Business Administration"
                                         degree="MBA"
                                         season="Fall-2022"
-                                        admissonMessage="Admisson is Going On"
                                     />
                                     <CardContent>
                                         <Typography
@@ -218,9 +218,7 @@ const AddTutionFee = () => {
                                                     </Typography>
                                                     <CardHeader
                                                         avatar={
-                                                            <Avatar aria-label="recipe">
-                                                                R
-                                                            </Avatar>
+                                                            <Avatar>R</Avatar>
                                                         }
                                                         title="Mr.X"
                                                         subheader="Assistant Professor"
@@ -258,14 +256,6 @@ const AddTutionFee = () => {
                                                                 Jhon Doe
                                                             </Typography>
                                                             <Typography>
-                                                                Office Name:
-                                                                Jhon Doe
-                                                            </Typography>
-                                                            <Typography>
-                                                                Office Name:
-                                                                Jhon Doe
-                                                            </Typography>
-                                                            <Typography>
                                                                 Section Name:
                                                                 Jhon Doe
                                                             </Typography>
@@ -296,9 +286,7 @@ const AddTutionFee = () => {
                                                     </Typography>
                                                     <CardHeader
                                                         avatar={
-                                                            <Avatar aria-label="recipe">
-                                                                R
-                                                            </Avatar>
+                                                            <Avatar>R</Avatar>
                                                         }
                                                         title="Mr.X"
                                                         subheader="Assistant Professor"
@@ -332,14 +320,6 @@ const AddTutionFee = () => {
                                                                 Jhon Doe
                                                             </Typography>
                                                             <Typography>
-                                                                Office Name:
-                                                                Jhon Doe
-                                                            </Typography>
-                                                            <Typography>
-                                                                Office Name:
-                                                                Jhon Doe
-                                                            </Typography>
-                                                            <Typography>
                                                                 Section Name:
                                                                 Jhon Doe
                                                             </Typography>
@@ -356,8 +336,6 @@ const AddTutionFee = () => {
                             </Grid>
                         </Grid>
                     </div>
-                    <div className="col-sm-12 col-md-4 mb-2"></div>
-                    <div className="col-sm-12 col-md-4 mb-2"></div>
                 </div>
             </div>
         </React.Fragment>
