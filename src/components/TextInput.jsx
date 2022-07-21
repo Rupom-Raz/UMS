@@ -20,7 +20,7 @@ const TextInput = ({ label, type, ...props }) => {
                             marginBottom: "5px",
                         }}
                         fullWidth
-                        variant="standard"
+                        variant="outlined"
                     />
                 ) : (
                     <TextField
@@ -34,7 +34,7 @@ const TextInput = ({ label, type, ...props }) => {
                         fullWidth
                         id="standard-basic"
                         label={label}
-                        variant="standard"
+                        variant="outlined"
                     />
                 )}
 

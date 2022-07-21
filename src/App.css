@@ -20,6 +20,7 @@
     cursor: pointer;
     transition: 0.5s;
     margin-bottom: 10px;
+    padding-left: 25px;
 }
 .cardContainer:hover {
     margin-top: -5px;
@@ -67,6 +68,11 @@
 .admissonMsgBox {
     box-shadow: 20px 20px 60px #d0d1d3, -20px -20px 60px #ffffff;
 }
+.approved {
+    box-shadow: 10px 20px 60px #d0d1d3, -10px -20px 60px #ffffff;
+    width: 150px;
+    height: 60px;
+}
 
 .tableRow {
     border-radius: 50px;
@@ -75,6 +81,7 @@
 }
 .error {
     color: red;
+    margin-top: -6px;
 }
 
 .card {

@@ -74,7 +74,7 @@ const Semester = () => {
                             >
                                 <Grid
                                     item
-                                    xs={10}
+                                    xs={12}
                                     style={{ textAlign: "center" }}
                                 >
                                     <Card
@@ -139,7 +139,7 @@ const Semester = () => {
                             >
                                 <Grid
                                     item
-                                    xs={10}
+                                    xs={12}
                                     style={{ textAlign: "center" }}
                                 >
                                     <Card
@@ -203,7 +203,7 @@ const Semester = () => {
                             >
                                 <Grid
                                     item
-                                    xs={10}
+                                    xs={12}
                                     style={{ textAlign: "center" }}
                                 >
                                     <Card
@@ -280,7 +280,7 @@ const Semester = () => {
                             >
                                 <Grid
                                     item
-                                    xs={10}
+                                    xs={12}
                                     style={{ textAlign: "center" }}
                                 >
                                     <Card
@@ -344,7 +344,7 @@ const Semester = () => {
                             >
                                 <Grid
                                     item
-                                    xs={10}
+                                    xs={12}
                                     style={{ textAlign: "center" }}
                                 >
                                     <Card
@@ -408,7 +408,7 @@ const Semester = () => {
                             >
                                 <Grid
                                     item
-                                    xs={10}
+                                    xs={12}
                                     style={{ textAlign: "center" }}
                                 >
                                     <Card

@@ -2,7 +2,14 @@ import { MenuItem, Select } from "@mui/material";
 import { ErrorMessage, useField } from "formik";
 import React from "react";
 
-const SelectField = ({ value, onChange, label, ...props }) => {
+const YearSelectField = ({
+    value,
+    onChange,
+    label,
+    heading,
+    inputValue,
+    ...props
+}) => {
     const [field, meta] = useField(props);
     return (
         <React.Fragment>
@@ -12,7 +19,7 @@ const SelectField = ({ value, onChange, label, ...props }) => {
                         {...field}
                         {...props}
                         error
-                        name="program"
+                        name="selectYear"
                         fullWidth
                         variant="outlined"
                         labelId="demo-simple-select-label"
@@ -21,17 +28,15 @@ const SelectField = ({ value, onChange, label, ...props }) => {
                         label={label}
                         onChange={onChange}
                     >
-                        <MenuItem value="Select Program">
-                            Select Program
-                        </MenuItem>
-                        <MenuItem value="B.Sc">B.Sc</MenuItem>
-                        <MenuItem value="M.Sc">M.Sc</MenuItem>
+                        <MenuItem value="Select Year">Select Year</MenuItem>
+                        <MenuItem value="2021">2021</MenuItem>
+                        <MenuItem value="2022">2022</MenuItem>
                     </Select>
                 ) : (
                     <Select
                         {...field}
                         {...props}
-                        name="program"
+                        name="selectYear"
                         fullWidth
                         variant="outlined"
                         labelId="demo-simple-select-label"
@@ -40,11 +45,9 @@ const SelectField = ({ value, onChange, label, ...props }) => {
                         label={label}
                         onChange={onChange}
                     >
-                        <MenuItem value="Select Program">
-                            Select Program
-                        </MenuItem>
-                        <MenuItem value="B.Sc">B.Sc</MenuItem>
-                        <MenuItem value="M.Sc">M.Sc</MenuItem>
+                        <MenuItem value="Select Year">Select Year</MenuItem>
+                        <MenuItem value="2021">2021</MenuItem>
+                        <MenuItem value="2022">2022</MenuItem>
                     </Select>
                 )}
                 <ErrorMessage
@@ -57,4 +60,4 @@ const SelectField = ({ value, onChange, label, ...props }) => {
     );
 };
 
-export default SelectField;
+export default YearSelectField;

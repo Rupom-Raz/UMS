@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -17,6 +16,9 @@ const Header = () => {
                     </li>
                     <li>
                         <Link to="/curriculam">Add Curriculam</Link>
+                    </li>
+                    <li>
+                        <Link to="/tutionfee">TuitionFee</Link>
                     </li>
                 </>
             </ul>

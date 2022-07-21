@@ -1,8 +1,14 @@
 import { MenuItem, Select } from "@mui/material";
 import { ErrorMessage, useField } from "formik";
 import React from "react";
-
-const SelectField = ({ value, onChange, label, ...props }) => {
+const DepartmentSelect = ({
+    value,
+    onChange,
+    label,
+    heading,
+    inputValue,
+    ...props
+}) => {
     const [field, meta] = useField(props);
     return (
         <React.Fragment>
@@ -12,7 +18,7 @@ const SelectField = ({ value, onChange, label, ...props }) => {
                         {...field}
                         {...props}
                         error
-                        name="program"
+                        name="selectDepartment"
                         fullWidth
                         variant="outlined"
                         labelId="demo-simple-select-label"
@@ -21,17 +27,17 @@ const SelectField = ({ value, onChange, label, ...props }) => {
                         label={label}
                         onChange={onChange}
                     >
-                        <MenuItem value="Select Program">
-                            Select Program
+                        <MenuItem value="Select Department">
+                            Select Department
                         </MenuItem>
-                        <MenuItem value="B.Sc">B.Sc</MenuItem>
-                        <MenuItem value="M.Sc">M.Sc</MenuItem>
+                        <MenuItem value="CSE">CSE</MenuItem>
+                        <MenuItem value="EEE">EEE</MenuItem>
                     </Select>
                 ) : (
                     <Select
                         {...field}
                         {...props}
-                        name="program"
+                        name="selectDepartment"
                         fullWidth
                         variant="outlined"
                         labelId="demo-simple-select-label"
@@ -40,11 +46,11 @@ const SelectField = ({ value, onChange, label, ...props }) => {
                         label={label}
                         onChange={onChange}
                     >
-                        <MenuItem value="Select Program">
-                            Select Program
+                        <MenuItem value="Select Department">
+                            Select Department
                         </MenuItem>
-                        <MenuItem value="B.Sc">B.Sc</MenuItem>
-                        <MenuItem value="M.Sc">M.Sc</MenuItem>
+                        <MenuItem value="CSE">CSE</MenuItem>
+                        <MenuItem value="EEE">EEE</MenuItem>
                     </Select>
                 )}
                 <ErrorMessage
@@ -57,4 +63,4 @@ const SelectField = ({ value, onChange, label, ...props }) => {
     );
 };
 
-export default SelectField;
+export default DepartmentSelect;

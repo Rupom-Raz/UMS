@@ -106,6 +106,7 @@ const AddCurriculamModal = ({ handleClose, open }) => {
                                     label="Enter ID"
                                     type="number"
                                 />
+
                                 <SelectField
                                     name="program"
                                     label="Select Programs"
