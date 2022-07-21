@@ -1,19 +1,11 @@
 import { Cancel } from "@mui/icons-material";
-import {
-    Box,
-    Button,
-    Grid,
-    InputLabel,
-    MenuItem,
-    Modal,
-    Select,
-    Typography,
-} from "@mui/material";
+import { Box, Button, Grid, Modal, Typography } from "@mui/material";
 import { Form, Formik } from "formik";
 import * as React from "react";
 import { useAlert } from "react-alert";
 import * as Yup from "yup";
 import { colors } from "../../Theme/colors";
+import SelectField from "../SelectField";
 import TextInput from "../TextInput";
 
 const style = {
@@ -33,14 +25,18 @@ const validationSchema = Yup.object().shape({
         .max(10, "Must be 10 characters or less")
         .required("Course code is required"),
     courseHours: Yup.number()
-        .max(5, "No longer than 5 hours")
+        .max(3, "No longer than 3 hours")
         .min(2, "Must be longer than 2 hours")
         .required("Course hours is required"),
     credit: Yup.number()
         .max(3, "No longer than 3 credits")
         .min(1, "Must be longer than 1 credit")
         .required("Course credit is required"),
-    program: Yup.string().required("Program is required"),
+
+    program: Yup.string()
+        .required("Program is required")
+        .oneOf(["B.Sc", "M.Sc"])
+        .label("Selected Program"),
 });
 
 const initialValues = {
@@ -139,25 +135,12 @@ const AddCourseModal = ({ handleClose, open }) => {
                                     type="number"
                                 />
 
-                                <InputLabel id="demo-simple-select-label">
-                                    Select Programs
-                                </InputLabel>
-                                <Select
+                                <SelectField
                                     name="program"
-                                    fullWidth
-                                    variant="outlined"
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={formik.values.program}
                                     label="Select Programs"
+                                    value={formik.values.program}
                                     onChange={formik.handleChange}
-                                >
-                                    <MenuItem value="Select Program">
-                                        Select Program
-                                    </MenuItem>
-                                    <MenuItem value="B.Sc">B.Sc</MenuItem>
-                                    <MenuItem value="M.Sc">M.Sc</MenuItem>
-                                </Select>
+                                />
                                 <Button
                                     type="submit"
                                     disabled={

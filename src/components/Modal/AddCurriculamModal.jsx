@@ -1,20 +1,12 @@
 import { Cancel } from "@mui/icons-material";
-import {
-    Box,
-    Button,
-    Grid,
-    InputLabel,
-    MenuItem,
-    Modal,
-    Select,
-    Typography,
-} from "@mui/material";
+import { Box, Button, Grid, Modal, Typography } from "@mui/material";
 
 import { Form, Formik } from "formik";
 import * as React from "react";
 import { useAlert } from "react-alert";
 import * as Yup from "yup";
 import { colors } from "../../Theme/colors";
+import SelectField from "../SelectField";
 import TextInput from "../TextInput";
 
 const style = {
@@ -31,7 +23,12 @@ const style = {
 const validationSchema = Yup.object().shape({
     curriculamName: Yup.string().required("Curriculam Title is required"),
     curriculamID: Yup.number().required("Curriculam ID is required"),
-    program: Yup.string().required("Program is required"),
+    // program: Yup.string().required("Program is required"),
+
+    program: Yup.string()
+        .required("Program is required")
+        .oneOf(["B.Sc", "M.Sc"])
+        .label("Selected Program"),
 });
 
 const initialValues = {
@@ -109,26 +106,12 @@ const AddCurriculamModal = ({ handleClose, open }) => {
                                     label="Enter ID"
                                     type="number"
                                 />
-
-                                <InputLabel id="demo-simple-select-label">
-                                    Select Programs
-                                </InputLabel>
-                                <Select
+                                <SelectField
                                     name="program"
-                                    fullWidth
-                                    variant="outlined"
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={formik.values.program}
                                     label="Select Programs"
+                                    value={formik.values.program}
                                     onChange={formik.handleChange}
-                                >
-                                    <MenuItem value="Select Program">
-                                        Select Program
-                                    </MenuItem>
-                                    <MenuItem value="B.Sc">B.Sc</MenuItem>
-                                    <MenuItem value="M.Sc">M.Sc</MenuItem>
-                                </Select>
+                                />
                                 <Button
                                     type="submit"
                                     disabled={

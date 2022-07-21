@@ -64,6 +64,9 @@
 .searchBox {
     padding-left: 160px;
 }
+.admissonMsgBox {
+    box-shadow: 20px 20px 60px #d0d1d3, -20px -20px 60px #ffffff;
+}
 
 .tableRow {
     border-radius: 50px;

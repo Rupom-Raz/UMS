@@ -1,4 +1,5 @@
 import {
+    Box,
     Card,
     CardContent,
     CardHeader,
@@ -36,9 +37,23 @@ const Semester = () => {
             <div className="App" style={{ backgroundColor: `${colors.white}` }}>
                 <Grid container justifyContent="center">
                     <Grid item>
-                        <Typography variant="h4" style={{ color: colors.gray }}>
-                            Addmisson Will Be Open on January 25, 2022
-                        </Typography>
+                        <Box
+                            className="admissonMsgBox"
+                            style={{
+                                backgroundColor: `${colors.fullwhite}`,
+                                padding: "10px 30px",
+                                borderRadius: "15px",
+                            }}
+                        >
+                            <Typography
+                                variant="h4"
+                                style={{
+                                    color: colors.gray,
+                                }}
+                            >
+                                Addmisson Will Be Open on January 25, 2022
+                            </Typography>
+                        </Box>
                     </Grid>
 
                     <Grid item xs={12} margin={3}>
