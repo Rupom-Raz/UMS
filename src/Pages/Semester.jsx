@@ -109,7 +109,9 @@ const Semester = () => {
                                             degree="MBA"
                                             season="Fall-2022"
                                         />
-                                        <CardContent>
+                                        <CardContent
+                                            style={{ marginTop: "-30px" }}
+                                        >
                                             <Typography
                                                 style={{
                                                     fontWeight: 600,
@@ -173,7 +175,9 @@ const Semester = () => {
                                             degree="MBA"
                                             season="Fall-2022"
                                         />
-                                        <CardContent>
+                                        <CardContent
+                                            style={{ marginTop: "-30px" }}
+                                        >
                                             <Typography
                                                 style={{
                                                     fontWeight: 600,
@@ -236,7 +240,9 @@ const Semester = () => {
                                             degree="MBA"
                                             season="Fall-2022"
                                         />
-                                        <CardContent>
+                                        <CardContent
+                                            style={{ marginTop: "-30px" }}
+                                        >
                                             <Typography
                                                 style={{
                                                     fontWeight: 600,
@@ -312,7 +318,9 @@ const Semester = () => {
                                             degree="MBA"
                                             season="Fall-2022"
                                         />
-                                        <CardContent>
+                                        <CardContent
+                                            style={{ marginTop: "-30px" }}
+                                        >
                                             <Typography
                                                 style={{
                                                     fontWeight: 600,
@@ -375,7 +383,9 @@ const Semester = () => {
                                             degree="MBA"
                                             season="Fall-2022"
                                         />
-                                        <CardContent>
+                                        <CardContent
+                                            style={{ marginTop: "-30px" }}
+                                        >
                                             <Typography
                                                 style={{
                                                     fontWeight: 600,
@@ -438,7 +448,9 @@ const Semester = () => {
                                             degree="MBA"
                                             season="Fall-2022"
                                         />
-                                        <CardContent>
+                                        <CardContent
+                                            style={{ marginTop: "-30px" }}
+                                        >
                                             <Typography
                                                 style={{
                                                     fontWeight: 600,

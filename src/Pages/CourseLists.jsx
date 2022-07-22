@@ -13,10 +13,10 @@ const CourseLists = () => {
     return (
         <>
             <AddCourseModal handleClose={handleClose} open={open} />
-            <Card className="courseCard mt-5 mx-2">
+            <Card className="courseCard mt-5 mx-auto">
                 <Card.Body>
                     <div className="container-fluid">
-                        <div className="row justify-content-between ">
+                        <div className="row justify-content-between my-3">
                             <div className="col-sm-6 col-md-4">
                                 <Button
                                     onClick={handleOpen}
@@ -51,11 +51,10 @@ const CourseLists = () => {
                     </div>
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-sm-12">
+                            <div className=" col-12">
                                 <Table striped="columns">
                                     <thead style={{ color: colors.gray }}>
                                         <tr>
-                                            <th>No </th>
                                             <th>Course Title</th>
                                             <th>Course Code</th>
                                             <th>Credit</th>
@@ -65,7 +64,6 @@ const CourseLists = () => {
                                     </thead>
                                     <tbody className="tableRow">
                                         <tr>
-                                            <td>1</td>
                                             <td>Introduction to Computer</td>
                                             <td>CSE-1100</td>
                                             <td>3</td>
@@ -73,7 +71,6 @@ const CourseLists = () => {
                                             <td>B.Sc</td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
                                             <td>Algorithm and Complexity</td>
                                             <td>CSE-1200</td>
                                             <td>3</td>

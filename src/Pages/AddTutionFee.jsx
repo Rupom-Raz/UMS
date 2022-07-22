@@ -49,7 +49,7 @@ const AddTutionFee = () => {
                         </Button>
                     </div>
                 </div>
-                <div className="row mt-3">
+                <div className="row mt-3 mx-auto">
                     <div className="col-sm-12 col-md-4 col-xxl-4 ">
                         <Grid container>
                             <Grid item xs={12} style={{ textAlign: "center" }}>
@@ -68,7 +68,7 @@ const AddTutionFee = () => {
                                         degree="MBA"
                                         season="Fall-2022"
                                     />
-                                    <CardContent>
+                                    <CardContent style={{ marginTop: "-25px" }}>
                                         <Typography
                                             style={{
                                                 fontWeight: 600,

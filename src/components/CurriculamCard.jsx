@@ -1,7 +1,6 @@
-import React from "react";
 import {
-    faComputer,
     faBookOpenReader,
+    faComputer,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from "react-bootstrap/Card";
@@ -9,7 +8,7 @@ import Card from "react-bootstrap/Card";
 const CurriculamCard = () => {
     return (
         <>
-            <Card className="card">
+            <Card className="card p-3 ">
                 <Card.Body>
                     <h6>B.Sc.(Honours) in CSE (2014 Curriculam)</h6>
                     <span className="cardSub">

@@ -34,66 +34,70 @@ export default function ProgramsModal() {
     };
 
     return (
-        <div>
-            <Button variant onClick={handleOpen}>
-                Set the Programs
-            </Button>
-            <Modal
-                open={open}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box sx={style}>
-                    <Cancel
-                        onClick={handleClose}
-                        style={{
-                            position: "absolute",
-                            top: "5px",
-                            right: "10px",
-                            color: colors.purple,
-                            cursor: "pointer",
-                        }}
-                    />
-                    <Grid container sm={12} spacing={2}>
-                        <Grid item xs={12} sm={12}>
-                            <FormControl fullWidth>
-                                <InputLabel id="demo-simple-select-label">
-                                    Select the Programs
-                                </InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={program}
-                                    label="Set Programs"
-                                    onChange={handleChange}
-                                >
-                                    <MenuItem value="Intoduction to Computer">
-                                        Intoduction to Computer
-                                    </MenuItem>
-                                    <MenuItem value="Algorithm and Complexity">
-                                        Algorithm and Complexity
-                                    </MenuItem>
-                                    <MenuItem value="Data Structure">
-                                        Data Structure
-                                    </MenuItem>
-                                </Select>
-                            </FormControl>
-                        </Grid>
-
-                        <Grid item xs={12}>
-                            <Button
-                                variant="outlined"
+        <React.Fragment>
+            <div className="container">
+                <div className="row">
+                    <Button variant onClick={handleOpen}>
+                        Set the Programs
+                    </Button>
+                    <Modal
+                        open={open}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                    >
+                        <Box sx={style}>
+                            <Cancel
+                                onClick={handleClose}
                                 style={{
-                                    backgroundColor: colors.purple,
-                                    color: colors.white,
+                                    position: "absolute",
+                                    top: "5px",
+                                    right: "10px",
+                                    color: colors.purple,
+                                    cursor: "pointer",
                                 }}
-                            >
-                                Set Programs
-                            </Button>
-                        </Grid>
-                    </Grid>
-                </Box>
-            </Modal>
-        </div>
+                            />
+                            <Grid container sm={12} spacing={2}>
+                                <Grid item xs={12} sm={12}>
+                                    <FormControl fullWidth>
+                                        <InputLabel id="demo-simple-select-label">
+                                            Select the Programs
+                                        </InputLabel>
+                                        <Select
+                                            labelId="demo-simple-select-label"
+                                            id="demo-simple-select"
+                                            value={program}
+                                            label="Set Programs"
+                                            onChange={handleChange}
+                                        >
+                                            <MenuItem value="Intoduction to Computer">
+                                                Intoduction to Computer
+                                            </MenuItem>
+                                            <MenuItem value="Algorithm and Complexity">
+                                                Algorithm and Complexity
+                                            </MenuItem>
+                                            <MenuItem value="Data Structure">
+                                                Data Structure
+                                            </MenuItem>
+                                        </Select>
+                                    </FormControl>
+                                </Grid>
+
+                                <Grid item xs={12}>
+                                    <Button
+                                        variant="outlined"
+                                        style={{
+                                            backgroundColor: colors.purple,
+                                            color: colors.white,
+                                        }}
+                                    >
+                                        Set Programs
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </Box>
+                    </Modal>
+                </div>
+            </div>
+        </React.Fragment>
     );
 }
