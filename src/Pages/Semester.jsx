@@ -13,7 +13,10 @@ import { colors } from "../Theme/colors";
 
 import { Cancel, LockOpen, LockOutlined } from "@mui/icons-material";
 import ButtonComp from "../components/Button/ButtonComp";
-import MenuComp from "../components/Menu/MenuComp";
+import {
+    default as MenuComp,
+    default as SemesterMenuComp,
+} from "../components/Menu/SemesterMenuComp";
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -299,7 +302,7 @@ const Semester = () => {
                                                     </IconButton>
                                                 ) : (
                                                     <IconButton>
-                                                        <MenuComp />
+                                                        <SemesterMenuComp />
                                                     </IconButton>
                                                 )
                                             }

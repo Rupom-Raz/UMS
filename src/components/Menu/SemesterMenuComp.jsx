@@ -4,7 +4,7 @@ import * as React from "react";
 import { colors } from "../../Theme/colors";
 import DeadlineModal from "../Modal/DeadLineModal";
 
-export default function MenuComp() {
+export default function SemesterMenuComp() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {

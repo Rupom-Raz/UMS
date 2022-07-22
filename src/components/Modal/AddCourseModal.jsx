@@ -1,11 +1,19 @@
 import { Cancel } from "@mui/icons-material";
-import { Box, Button, Grid, Modal, Typography } from "@mui/material";
-import { Form, Formik } from "formik";
+import {
+    Box,
+    Button,
+    Grid,
+    MenuItem,
+    Modal,
+    Select,
+    Typography,
+} from "@mui/material";
+import { ErrorMessage, Form, Formik, useField } from "formik";
 import * as React from "react";
 import { useAlert } from "react-alert";
 import * as Yup from "yup";
 import { colors } from "../../Theme/colors";
-import SelectField from "../SelectField";
+
 import TextInput from "../TextInput";
 
 const style = {
@@ -15,7 +23,7 @@ const style = {
     transform: "translate(-50%, -50%)",
     minWidth: 500,
     bgcolor: "background.paper",
-    borderRadius: "20px",
+    borderRadius: "10px",
     boxShadow: 24,
     p: 4,
 };
@@ -45,6 +53,61 @@ const initialValues = {
     courseHours: "",
     credit: "",
     program: "Select Program",
+};
+
+const SelectField = ({ value, onChange, label, ...props }) => {
+    const [field, meta] = useField(props);
+    return (
+        <React.Fragment>
+            <div className="mb-1">
+                {meta.error && meta.touched ? (
+                    <Select
+                        {...field}
+                        {...props}
+                        error
+                        name="program"
+                        fullWidth
+                        variant="outlined"
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={value}
+                        label={label}
+                        onChange={onChange}
+                    >
+                        <MenuItem value="Select Program">
+                            Select Program
+                        </MenuItem>
+                        <MenuItem value="B.Sc">B.Sc</MenuItem>
+                        <MenuItem value="M.Sc">M.Sc</MenuItem>
+                    </Select>
+                ) : (
+                    <Select
+                        {...field}
+                        {...props}
+                        name="program"
+                        fullWidth
+                        variant="outlined"
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={value}
+                        label={label}
+                        onChange={onChange}
+                    >
+                        <MenuItem value="Select Program">
+                            Select Program
+                        </MenuItem>
+                        <MenuItem value="B.Sc">B.Sc</MenuItem>
+                        <MenuItem value="M.Sc">M.Sc</MenuItem>
+                    </Select>
+                )}
+                <ErrorMessage
+                    component="div"
+                    name={field.name}
+                    className="error"
+                />
+            </div>
+        </React.Fragment>
+    );
 };
 
 const AddCourseModal = ({ handleClose, open }) => {

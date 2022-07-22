@@ -20,6 +20,9 @@ const Header = () => {
                     <li>
                         <Link to="/tutionfee">TuitionFee</Link>
                     </li>
+                    <li>
+                        <Link to="/program">Programs</Link>
+                    </li>
                 </>
             </ul>
         </header>

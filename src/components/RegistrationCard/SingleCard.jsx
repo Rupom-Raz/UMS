@@ -9,7 +9,7 @@ import {
     Typography,
 } from "@mui/material";
 import { colors } from "../../Theme/colors";
-import MenuComp from "../Menu/MenuComp";
+import MenuComp from "../Menu/SemesterMenuComp";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;

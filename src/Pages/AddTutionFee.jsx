@@ -50,7 +50,7 @@ const AddTutionFee = () => {
                     </div>
                 </div>
                 <div className="row mt-3">
-                    <div className="col-sm-12 col-md-4 ">
+                    <div className="col-sm-12 col-md-4 col-xxl-4 ">
                         <Grid container>
                             <Grid item xs={12} style={{ textAlign: "center" }}>
                                 <Card
@@ -164,6 +164,7 @@ const AddTutionFee = () => {
                                                         backgroundColor:
                                                             colors.purple,
                                                         color: colors.white,
+                                                        margin: "5px 0px",
                                                     }}
                                                 >
                                                     Approve
@@ -175,6 +176,7 @@ const AddTutionFee = () => {
                                                     style={{
                                                         backgroundColor: "red",
                                                         color: colors.white,
+                                                        margin: "5px 0px",
                                                     }}
                                                 >
                                                     Cancel
@@ -246,21 +248,54 @@ const AddTutionFee = () => {
                                                     >
                                                         <CardContent>
                                                             <Typography>
-                                                                Email:abc@outlook.com
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    Email
+                                                                </span>
+                                                                :abc@outlook.com
                                                             </Typography>
                                                             <Typography>
-                                                                ID:2500
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    ID
+                                                                </span>
+                                                                :2500
                                                             </Typography>
                                                             <Typography>
-                                                                Office Name:
-                                                                Jhon Doe
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    Office Name
+                                                                </span>
+                                                                : Jhon Doe
                                                             </Typography>
                                                             <Typography>
-                                                                Section Name:
-                                                                Jhon Doe
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    Section Name
+                                                                </span>
+                                                                : Jhon Doe
                                                             </Typography>
                                                             <Typography>
-                                                                Mobile:123123123
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    Mobile
+                                                                </span>
+                                                                :123123123
                                                             </Typography>
                                                         </CardContent>
                                                     </Collapse>
@@ -310,21 +345,54 @@ const AddTutionFee = () => {
                                                     >
                                                         <CardContent>
                                                             <Typography>
-                                                                Email:abc@outlook.com
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    Email
+                                                                </span>
+                                                                :abc@outlook.com
                                                             </Typography>
                                                             <Typography>
-                                                                ID:2500
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    ID
+                                                                </span>
+                                                                :2500
                                                             </Typography>
                                                             <Typography>
-                                                                Office Name:
-                                                                Jhon Doe
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    Office Name
+                                                                </span>
+                                                                : Jhon Doe
                                                             </Typography>
                                                             <Typography>
-                                                                Section Name:
-                                                                Jhon Doe
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    Section Name
+                                                                </span>
+                                                                : Jhon Doe
                                                             </Typography>
                                                             <Typography>
-                                                                Mobile:123123123
+                                                                <span
+                                                                    style={{
+                                                                        color: colors.purple,
+                                                                    }}
+                                                                >
+                                                                    Mobile
+                                                                </span>
+                                                                :123123123
                                                             </Typography>
                                                         </CardContent>
                                                     </Collapse>
