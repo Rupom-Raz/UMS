@@ -30,11 +30,7 @@ const Programs = () => {
                                 }}
                             >
                                 <CardHeader
-                                    action={
-                                        <IconButton>
-                                            <ProgramsMenuComp />
-                                        </IconButton>
-                                    }
+                                    action={<ProgramsMenuComp />}
                                     style={{ color: colors.purple }}
                                     title="Faculty of CSE"
                                     subheader="Department of Computer Science and Enginnering"

@@ -94,7 +94,10 @@ const AddTutionFee = () => {
                                             </span>
                                         </Typography>
                                         <Typography
-                                            style={{ textAlign: "center" }}
+                                            style={{
+                                                textAlign: "center",
+                                                marginRight: "63px",
+                                            }}
                                         >
                                             <span
                                                 style={{ color: colors.purple }}
@@ -109,7 +112,10 @@ const AddTutionFee = () => {
                                             </span>
                                         </Typography>
                                         <Typography
-                                            style={{ textAlign: "center" }}
+                                            style={{
+                                                textAlign: "center",
+                                                marginRight: "53px",
+                                            }}
                                         >
                                             <span
                                                 style={{ color: colors.purple }}
@@ -124,7 +130,10 @@ const AddTutionFee = () => {
                                             </span>
                                         </Typography>
                                         <Typography
-                                            style={{ textAlign: "center" }}
+                                            style={{
+                                                textAlign: "center",
+                                                marginRight: "30px",
+                                            }}
                                         >
                                             <span
                                                 style={{
@@ -141,7 +150,10 @@ const AddTutionFee = () => {
                                             </span>
                                         </Typography>
                                         <Typography
-                                            style={{ textAlign: "center" }}
+                                            style={{
+                                                textAlign: "center",
+                                                marginRight: "78px",
+                                            }}
                                         >
                                             <span
                                                 style={{ color: colors.purple }}
@@ -257,7 +269,12 @@ const AddTutionFee = () => {
                                                                 </span>
                                                                 :abc@outlook.com
                                                             </Typography>
-                                                            <Typography>
+                                                            <Typography
+                                                                style={{
+                                                                    marginRight:
+                                                                        "118px",
+                                                                }}
+                                                            >
                                                                 <span
                                                                     style={{
                                                                         color: colors.purple,
@@ -267,7 +284,12 @@ const AddTutionFee = () => {
                                                                 </span>
                                                                 :2500
                                                             </Typography>
-                                                            <Typography>
+                                                            <Typography
+                                                                style={{
+                                                                    marginRight:
+                                                                        "10px",
+                                                                }}
+                                                            >
                                                                 <span
                                                                     style={{
                                                                         color: colors.purple,
@@ -277,7 +299,12 @@ const AddTutionFee = () => {
                                                                 </span>
                                                                 : Jhon Doe
                                                             </Typography>
-                                                            <Typography>
+                                                            <Typography
+                                                                style={{
+                                                                    marginLeft:
+                                                                        "5px",
+                                                                }}
+                                                            >
                                                                 <span
                                                                     style={{
                                                                         color: colors.purple,
@@ -287,7 +314,12 @@ const AddTutionFee = () => {
                                                                 </span>
                                                                 : Jhon Doe
                                                             </Typography>
-                                                            <Typography>
+                                                            <Typography
+                                                                style={{
+                                                                    marginRight:
+                                                                        "40px",
+                                                                }}
+                                                            >
                                                                 <span
                                                                     style={{
                                                                         color: colors.purple,
@@ -354,7 +386,12 @@ const AddTutionFee = () => {
                                                                 </span>
                                                                 :abc@outlook.com
                                                             </Typography>
-                                                            <Typography>
+                                                            <Typography
+                                                                style={{
+                                                                    marginRight:
+                                                                        "118px",
+                                                                }}
+                                                            >
                                                                 <span
                                                                     style={{
                                                                         color: colors.purple,
@@ -364,7 +401,12 @@ const AddTutionFee = () => {
                                                                 </span>
                                                                 :2500
                                                             </Typography>
-                                                            <Typography>
+                                                            <Typography
+                                                                style={{
+                                                                    marginRight:
+                                                                        "10px",
+                                                                }}
+                                                            >
                                                                 <span
                                                                     style={{
                                                                         color: colors.purple,
@@ -384,7 +426,12 @@ const AddTutionFee = () => {
                                                                 </span>
                                                                 : Jhon Doe
                                                             </Typography>
-                                                            <Typography>
+                                                            <Typography
+                                                                style={{
+                                                                    marginRight:
+                                                                        "40px",
+                                                                }}
+                                                            >
                                                                 <span
                                                                     style={{
                                                                         color: colors.purple,
